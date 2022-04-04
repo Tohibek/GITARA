@@ -1,0 +1,417 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+ol,
+ul,
+li{
+    list-style: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.header{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4   )), url(../images/unsplash_gioH4gHo0-g.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header_row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_menu-left{
+    display: flex;
+    align-items: center;
+}
+
+.header_logo{
+    margin-right: 24px;
+}
+
+.header_link{
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FCFCFC;
+    padding: 15px;
+    margin-right: 24px;
+}
+
+.header_link:hover{
+    color: red;
+}
+
+.header_link:last-child{
+    margin-right: 0;
+}
+
+
+.header_btn:hover path{
+    fill: red;
+}
+
+.header_mobile-btn{
+    display: none;
+}
+
+.header_title{
+    font-family: 'Work Sans',sans-serif ;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.header_main{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.header_content{
+    width: 45%;
+}
+
+
+.lessons{
+    margin-bottom: 80px;
+    transform: translateY(-50%);
+}
+
+.lessons_bg{
+    width: 100%;
+    padding: 50px 0;
+    background: linear-gradient(rgba(171, 4, 51, 0.7 ), rgba(171, 4, 51, 0.7)),url(../images/Rectangle\ 81.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-position: center;
+    background-blend-mode: normal;
+}
+
+.lessons_title{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.lessons_desc{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 149%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.lessons_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lessons_btn{
+    background-color: #ff753a;
+    border-radius: 32px;
+    padding: 8px 16px;
+    text-align: center;
+    color: #FFFF;
+    border: 1px solid;
+}
+
+.lessons_btn:hover{
+    background-color: transparent;
+    border-color:  #ff753a;
+}
+
+
+
+
+
+
+.section_title{
+    position: relative;
+    text-align: center;
+    padding-top: 8px;
+    margin-bottom: 30px;
+}
+
+
+.section_title h1{
+    font-family: 'Work Sans',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: #505050;
+}
+
+
+.section_title::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: rgb(126, 25, 45);
+}
+
+
+
+.products_row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.poduct__img{
+    background: radial-gradient(98.56% 98.92% at 1.22% 1.08%, #FBFBFB 0%, #D3D3D3 100%);
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    width: 100%;
+
+}
+
+
+.product_card{
+    width:32%;
+}
+
+
+.product_content{
+    background: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.product_content-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_name{
+    font-family: 'Work Sans',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: #252525;
+}
+
+.product_price{
+    font-family: 'Work Sans',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: #252525;
+}
+
+
+.product_content-body{
+    margin-bottom: 20px;
+}
+
+
+.product_desc{
+    font-family: 'Work Sans',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #767676;
+}
+
+
+.product_attribute{
+    font-family: 'Work Sans',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: right;
+    color: #505050;
+}
+
+
+
+
+
+
+
+
+.section_product{
+    margin-top: 80px;
+    background-color: #beb1b1;
+    height: 500px;
+}
+
+
+.product_card1{
+    width:32%;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.product__img{
+    text-align: center;
+}
+
+.productn_content{
+    padding: 0 10px 10px 10px;
+}
+
+.products_row{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px){
+    .header_nav,
+    .header_btns{
+        display: none;
+
+    }
+
+
+    .header_mobile-btn{
+        display: block;
+    }
+
+    .header_content{
+        width: 62%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .product_card{
+        width: 40%;
+    }
+
+    .product_card1{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .section_product{
+        height: 850px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+
+    .header_content{
+        width: 100%;
+        text-align: center;
+    }
+
+    .header_title{
+        font-size: 32px;
+    }
+
+    .lessons_title{
+        font-size: 24px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 500px){
+    .product_card{
+        width: 100%;
+    }
+
+    .product_card1{
+        width: 100%;
+    }
+  
+    .main{
+        width: 100%;
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lessons_btn{
+        text-align: center;
+    }
+    .section_product{
+        height: 100%;
+    }
+    
+}
